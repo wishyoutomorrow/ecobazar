@@ -1,5 +1,5 @@
 <template>
-    <div class="container h-[75vh] py-6">
+    <div class="container min-h-[75vh] py-6">
         <div class="grid grid-cols-[2fr_1fr] grid-rows-2 gap-6 h-full">
             <div class="rounded-lg row-span-2 flex flex-col justify-center items-start p-14 text-white 
                 bg-[url('@/assets/images/banner1.jpg')] 
@@ -15,11 +15,8 @@
                     <span class="leading-[150%] font-normal text-sm opacity-80">Free shipping on all your order.</span>
 
                 </div>
-                <a href="#"
-                    class="flex gap-4 justify-center min-w-48 rounded-[53px] bg-white text-primary text-base font-semibold leading-[120%] p-4 items-center">
-                    Shop now
-                    <IconArrowRight />
-                </a>
+                <ArrowLink text="Shop Now" url="#"
+                    class="flex gap-4 justify-center min-w-48 rounded-[53px] bg-white p-4 mt-0" />
             </div>
 
             <div
@@ -27,22 +24,15 @@
                 <span class="text-sm font-medium text-gray-9">Summer Sale</span>
                 <h2 class="mt-1 mb-2 text-3xl font-semibold text-gray-9">75% OFF</h2>
                 <span class=" block leading-[150%] font-normal text-sm opacity-80">Only Fruit & Vegetable</span>
-                <a href="#"
-                    class="inline-flex mt-6 gap-4 justify-start  text-primary text-base font-semibold leading-[120%] items-center">
-                    Shop now
-                    <IconArrowRight />
-                </a>
+                <ArrowLink text="Shop Now" url="#!" class="mt-6" />
             </div>
 
             <div
                 class="flex flex-col items-center justify-center col-start-2 p-8 text-center text-white bg-center bg-no-repeat bg-cover rounded-lg bg">
                 <span class="text-sm font-medium text-white uppercase">Best Deal</span>
                 <h2 class="text-3xl mt-3 mb-8 font-semibold leading-[120%]">Special Products <br> Deal of the Month</h2>
-                <a href="#"
-                    class="inline-flex gap-4 justify-start  text-primary text-base font-semibold leading-[120%] items-center">
-                    Shop now
-                    <IconArrowRight />
-                </a>
+                <ArrowLink text="Shop Now" url="#!" />
+
             </div>
         </div>
         <!-- marketing /> -->
@@ -93,11 +83,12 @@
 </template>
 
 <script setup>
-import IconArrowRight from '@/ui/icons/IconArrowRight.vue';
 import IconTruck from '@/ui/icons/IconTruck.vue';
 import IconHeadphones from '@/ui/icons/IconHeadphones.vue';
 import IconShoppingBag from '@/ui/icons/IconShoppingBag.vue';
 import IconPackage from '@/ui/icons/IconPackage.vue';
+
+import ArrowLink from '@/ui/ArrowLink.vue';
 
 </script>
 
