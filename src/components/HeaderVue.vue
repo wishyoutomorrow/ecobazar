@@ -52,7 +52,7 @@
                 </a>
                 <span class="block w-0.5 h-2/3 bg-[#CCCCCC]"></span>
                 <a href="#!" class="flex items-center gap-3">
-                    <IconBag class="flex-grow w-9 h-9" />
+                    <IconBag class="flex-grow w-9 h-9 stroke-gray-9" />
                     <div class="flex-shrink-0">
                         <span class="block text-xs text-[#4D4D4D]">Shopping cart:</span>
                         <span class="block mt-2 text-sm text-[#1A1A1A] font-medium">$57.00</span>

@@ -7,6 +7,7 @@
         <HotDealsVue />
         <DiscountVue />
         <FeaturedProducts />
+        <LatestNews />
     </div>
 </template>
 <script setup>
@@ -17,6 +18,7 @@ import BannersVue from '@/components/BannersVue.vue';
 import HotDealsVue from '@/components/HotDealsVue.vue';
 import DiscountVue from '@/components/DiscountVue.vue';
 import FeaturedProducts from '@/components/FeaturedProducts.vue';
+import LatestNews from '@/components/LatestNews.vue';
 </script>
 <style lang="">
 
