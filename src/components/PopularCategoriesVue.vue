@@ -1,9 +1,14 @@
 <template>
     <div class="mb-12">
         <div class="container">
-            <SectionTitle title="Popular Categories" link-text="View All" link-url="#" class="mb-8" />
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-semibold text-gray-9">
+                    Popular Categories
+                </h2>
+                <arrow-link href="/">View All</arrow-link>
+            </div>
         </div>
-        <div class="container flex flex-wrap gap-6">
+        <div class="container grid grid-cols-6 gap-6">
             <Category :name="product.name" :url="product.url" :img-url="product.imgUrl" v-for="product in products"
                 :key="product.imgUrl" />
         </div>
@@ -11,9 +16,8 @@
 </template>
 
 <script setup>
-import SectionTitle from '@/ui/SectionTitle.vue';
 import Category from './Category.vue';
-
+import ArrowLink from '@/ui/ArrowLink.vue';
 import { ref } from 'vue';
 
 const products = ref([

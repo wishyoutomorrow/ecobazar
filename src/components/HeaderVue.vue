@@ -34,11 +34,7 @@
 
 
         <div class="container flex justify-between py-6">
-            <a href="/" class="logo text-#002603 text-[32px] font-medium flex items-center gap-2">
-                <img src="/logo.svg" alt="logo">
-                <span>Ecobazar</span>
-            </a>
-            <!-- logo /> -->
+            <LogoUi />
             <div class="relative flex">
                 <button class="absolute -translate-y-1/2 top-1/2 left-4">
                     <IconSearch />
@@ -107,6 +103,7 @@ import IconSearch from '@/ui/icons/IconSearch.vue';
 import IconHeart from '@/ui/icons/IconHeart.vue';
 import IconBag from '@/ui/icons/IconBag.vue';
 import IconPhone from '@/ui/icons/IconPhone.vue';
+import LogoUi from '@/ui/LogoUi.vue';
 </script>
 <style lang="">
 
