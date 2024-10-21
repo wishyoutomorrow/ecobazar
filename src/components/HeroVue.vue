@@ -15,7 +15,9 @@
                     <span class="leading-[150%] font-normal text-sm opacity-80">Free shipping on all your order.</span>
 
                 </div>
-                <arrow-link class="flex gap-4 justify-center min-w-48 rounded-[53px] bg-white p-4 mt-0" href="/sorin">
+                <arrow-link
+                    class="flex gap-4 justify-center min-w-48 rounded-[53px] text-primary stroke-primary bg-white p-4 mt-0"
+                    href="/sorin">
                     Shop now
                 </arrow-link>
 
@@ -26,14 +28,14 @@
                 <span class="text-sm font-medium text-gray-9">Summer Sale</span>
                 <h2 class="mt-1 mb-2 text-3xl font-semibold text-gray-9">75% OFF</h2>
                 <span class=" block leading-[150%] font-normal text-sm opacity-80">Only Fruit & Vegetable</span>
-                <arrow-link class="mt-6" href="/">Shop now</arrow-link>
+                <arrow-link class="mt-6 text-primary stroke-primary" href="/">Shop now</arrow-link>
             </div>
 
             <div
                 class="flex flex-col items-center justify-center col-start-2 p-8 text-center text-white bg-center bg-no-repeat bg-cover rounded-lg bg">
                 <span class="text-sm font-medium text-white uppercase">Best Deal</span>
                 <h2 class="text-3xl mt-3 mb-8 font-semibold leading-[120%]">Special Products <br> Deal of the Month</h2>
-                <arrow-link href="/">Shop now</arrow-link>
+                <arrow-link href="/" class="text-primary stroke-primary">Shop now</arrow-link>
 
             </div>
         </div>

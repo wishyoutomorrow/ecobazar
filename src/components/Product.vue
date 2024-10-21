@@ -1,6 +1,6 @@
 <template>
     <a href="#"
-        class="inline-block p-3 group border-[1px] overflow-hidden border-gray-1 hover:border-hard-primary hover:shadow-shadowGreen">
+        class="inline-flex flex-col justify-between bg-white p-3 group border-[1px] overflow-hidden border-gray-1 hover:border-hard-primary hover:shadow-shadowGreen">
         <div class="w-64 h-60 bg-[url('/src/assets/images/product.png')] bg-cover bg-center bg-no-repeat">
             <ChipUi />
         </div>
