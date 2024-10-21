@@ -31,7 +31,7 @@
 
             </div>
             <a href="#" class="inline-block p-3 rounded-full bg-gray-0.5">
-                <IconBag />
+                <IconBag class="stroke-gray-9" />
             </a>
         </div>
     </a>

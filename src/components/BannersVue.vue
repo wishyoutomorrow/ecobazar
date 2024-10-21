@@ -34,7 +34,7 @@
             </div>
         </banner-ui>
 
-        <banner-ui title="Low-Fat Meat" suptitle="85% Fat Free" link="/"
+        <banner-ui title="100% Fresh Fruit" suptitle="Summer Sale" link="/"
             class="bg-[url('/src/assets/images/bigbanner3.jpg')] bg-cover bg-no-repeat text-gray-9 bg-center">
             <div class="flex items-center justify-center gap-2">
                 <span class="text-lg font-normal leadign-[150%]">Up to</span> <span
