@@ -1,6 +1,6 @@
 <template>
     <a href="#"
-        class="inline-block bg-white p-6 group border-[1px] overflow-hidden border-gray-1 hover:border-hard-primary hover:shadow-shadowGreen">
+        class=" z-20  inline-block bg-white p-6 group border-[1px] overflow-hidden border-hard-primary shadow-shadowGreen">
         <div
             class="h-[446px] flex flex-col justify-between items-start bg-[url('/src/assets/images/product.png')] bg-cover bg-center bg-no-repeat">
             <div>

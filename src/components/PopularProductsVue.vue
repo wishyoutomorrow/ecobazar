@@ -5,7 +5,7 @@
                 <h2 class="text-3xl font-semibold text-gray-9">
                     Popular Products
                 </h2>
-                <arrow-link href="/">View All</arrow-link>
+                <arrow-link href="/" class="text-primary stroke-primary">View All</arrow-link>
             </div>
         </div>
         <div class="container grid grid-cols-5">
