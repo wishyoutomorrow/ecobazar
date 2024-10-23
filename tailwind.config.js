@@ -6,7 +6,8 @@ export default {
       boxShadow: {
         shadowGray: "0px 8px 40px 0px rgba(0, 38, 3, 0.08)",
         shadowGreen: "0px 0px 12px 0px rgba(32, 181, 38, 0.32)",
-        shadowWhite: "0px 20px 50px 0px rgba(0, 0, 0, 0.08)"
+        shadowWhite: "0px 20px 50px 0px rgba(0, 0, 0, 0.08)",
+        shadowBlack: "0px 10px 20px 0px rgba(0, 0, 0, 0.01)"
       },
     },
     colors: {
