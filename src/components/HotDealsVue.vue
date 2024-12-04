@@ -10,22 +10,8 @@
         </div>
         <div class="container grid grid-cols-5">
             <ProductHot class="col-span-2 row-span-2 " />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+            <Product v-for="product in productsStore.products" :product="product" :key="product.id" />
 
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
 
         </div>
     </div>
@@ -35,4 +21,7 @@
 import Product from './Product.vue';
 import ProductHot from './ProductHot.vue';
 import ArrowLink from '@/ui/ArrowLink.vue';
+import {useProducts} from "@/stores/products.js";
+
+const productsStore = useProducts()
 </script>

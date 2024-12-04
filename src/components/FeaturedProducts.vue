@@ -9,11 +9,6 @@
             </div>
         </div>
         <div class="container flex">
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
 
         </div>
     </div>

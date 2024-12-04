@@ -1,8 +1,8 @@
 <template>
-    <a class="inline-flex gap-4 justify-start text-base font-semibold leading-[120%] items-center">
+    <div class="inline-flex gap-4 justify-start text-base font-semibold leading-[120%] items-center">
         <slot />
         <IconArrowRight />
-    </a>
+    </div>
 </template>
 
 <script setup>

@@ -1,5 +1,7 @@
 <script setup>
 
+
+
 import IconArrowLeft from "@/ui/icons/IconArrowLeft.vue";
 import IconArrowRight from "@/ui/icons/IconArrowRight.vue";
 import TestimonialCard from "@/components/TestimonialCard.vue";
@@ -19,7 +21,7 @@ const testimonials = ref([
     user: {
       name: "Dianne Russell",
       jobTitle: "Customer",
-      imgUrl: "/src/assets/images/user1.jpg"
+      imgUrl: "/src/assets/images/user2.jpg"
     },
     desc: "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
     id: 1
@@ -28,7 +30,7 @@ const testimonials = ref([
     user: {
       name: "Eleanor Pena",
       jobTitle: "Customer",
-      imgUrl: "/src/assets/images/user1.jpg"
+      imgUrl: "/src/assets/images/user3.jpg"
     },
     desc: "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
     id: 2

@@ -17,7 +17,7 @@ defineProps({
     </p>
     <div class="flex items-center justify-between">
       <div class="flex items-center justify-between gap-3">
-        <div :class="`w-14 rounded-full h-14 bg-[url('${user.imgUrl}')] bg-cover bg-center bg-no-repeat`">
+        <div class="w-14 rounded-full h-14 bg-cover bg-center bg-no-repeat" :style="{backgroundImage: `url('${user.imgUrl}')`}">
 
         </div>
         <div>

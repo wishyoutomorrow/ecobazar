@@ -1,3 +1,17 @@
+<script setup>
+import IconMapPin from '@/ui/icons/IconMapPin.vue';
+import IconArrowDown from '@/ui/icons/IconArrowDown.vue';
+import IconSearch from '@/ui/icons/IconSearch.vue';
+import IconHeart from '@/ui/icons/IconHeart.vue';
+import IconBag from '@/ui/icons/IconBag.vue';
+import IconPhone from '@/ui/icons/IconPhone.vue';
+import LogoUi from '@/ui/LogoUi.vue';
+
+import {useCart} from "@/stores/cart.js";
+import {useRouter} from "vue-router";
+const cart = useCart();
+const routes = useRouter().getRoutes().filter(route => !/:/.test(route.path));
+</script>
 <template>
     <header>
         <div class=" text-[#666] py-3 shadow-[0_1px_0px_0px_#e5e5e5]">
@@ -55,7 +69,7 @@
                     <IconBag class="flex-grow w-9 h-9 stroke-gray-9" />
                     <div class="flex-shrink-0">
                         <span class="block text-xs text-[#4D4D4D]">Shopping cart:</span>
-                        <span class="block mt-2 text-sm text-[#1A1A1A] font-medium">$57.00</span>
+                        <span class="block mt-2 text-sm text-[#1A1A1A] font-medium">${{cart.totalPrice}}</span>
                     </div>
                 </a>
             </div>
@@ -66,24 +80,11 @@
             <div class="container flex items-center justify-between">
                 <nav>
                     <ul class="flex gap-8">
-                        <li><a href="/" class="hover:text-white">
-                                Home
-                            </a></li>
-                        <li><a href="#!" class="hover:text-white">
-                                Shop
-                            </a></li>
-                        <li><a href="#!" class="hover:text-white">
-                                Pages
-                            </a></li>
-                        <li><a href="#!" class="hover:text-white">
-                                Blog
-                            </a></li>
-                        <li><a href="#!" class="hover:text-white">
-                                About usd
-                            </a></li>
-                        <li><a href="#!" class="hover:text-white">
-                                Contact Us
-                            </a></li>
+                        <li v-for="route in routes" :key="route.path">
+                          <router-link :to="route.path" class="hover:text-white capitalize">
+                            {{route.name}}
+                          </router-link>
+                        </li>
                     </ul>
                 </nav>
                 <!-- nav /> -->
@@ -96,15 +97,7 @@
         <!-- bottom /> -->
     </header>
 </template>
-<script setup>
-import IconMapPin from '@/ui/icons/IconMapPin.vue';
-import IconArrowDown from '@/ui/icons/IconArrowDown.vue';
-import IconSearch from '@/ui/icons/IconSearch.vue';
-import IconHeart from '@/ui/icons/IconHeart.vue';
-import IconBag from '@/ui/icons/IconBag.vue';
-import IconPhone from '@/ui/icons/IconPhone.vue';
-import LogoUi from '@/ui/LogoUi.vue';
-</script>
+
 <style lang="">
 
 </style>

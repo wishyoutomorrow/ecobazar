@@ -1,21 +1,28 @@
-import { ref, computed } from "vue";
 import { defineStore } from "pinia";
+import {ref} from "vue";
 
-export const products = defineStore("counter", () => {
-  const count = ref([
-    {
-      title: "Fresh apple",
-      price: 13,
-      previousPrice: 0,
-      id: 0,
-    },
-    {
-      title: "Fresh malina",
-      price: 20,
-      previousPrice: 21,
-      id: 1,
-    },
-  ]);
+export const useCategories = defineStore("categories", {
+  state: () => ({
+    categories: ref([
+      {
+        name: "Fructe",
+        url: "category_1",
+        imgUrl: "/src/assets/images/category/category.png",
+        id: 321,
+      },
+      {
+        name: "Legume",
+        url: "category_2",
+        imgUrl: "/src/assets/images/category/category.png",
+        id: 11,
+      },
+      {
+        name: "Laura",
+        url: "category_3",
+        imgUrl: "/src/assets/images/category/category.png",
+        id: 12,
+      },
 
-  return count;
-});
+    ]),
+  })
+})
